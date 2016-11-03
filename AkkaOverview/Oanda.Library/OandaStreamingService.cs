@@ -48,7 +48,7 @@ namespace AkkaOverview.Oanda.Library
             var webClient = new HttpClient();
             webClient.DefaultRequestHeaders.Clear();
             webClient.DefaultRequestHeaders.Add("Authorization",
-                "Bearer 6617e78cdfb17407f26688f98ac27553-784af0f84167be1fb38b264f7a3c1015");
+                "Bearer token");
             webClient.DefaultRequestHeaders.Add("ContentType", "application/x-www-form-urlencoded");
             webClient.DefaultRequestHeaders.Add("X-Accept-Datetime-Format", "UNIX");
             string request = RequestBuilder.Build(BaseUrl, _parameters);
